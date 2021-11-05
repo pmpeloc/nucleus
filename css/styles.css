@@ -41,10 +41,6 @@ img {
   display: block;
 }
 
-.mask {
-  overflow: hidden;
-}
-
 [class$='__contenedor'] {
   max-width: 120rem;
   margin: 0 auto;
@@ -224,18 +220,22 @@ img {
 .seguridad {
   background-color: var(--primario);
   padding: 10rem 0;
-  transform: rotate(3deg) scale(1.5);
-  margin: 50rem 0;
+  position: relative;
 }
 
-@media (min-width: 768px) {
-  .seguridad {
-    margin: 30rem 0;
-  }
+.seguridad::before,
+.seguridad::after {
+  background-color: var(--blanco);
+  content: '';
+  height: 20rem;
+  width: 100%;
+  position: absolute;
 }
 
-.seguridad__contenedor {
-  transform: rotate(-3deg) scale(0.75);
+.seguridad::before {
+}
+
+.seguridad::after {
 }
 
 .seguridad__heading {
