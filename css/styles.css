@@ -58,7 +58,7 @@ img {
 
 @media (min-width: 768px) {
   .header {
-    background-size: 45rem;
+    background-size: 50rem;
   }
 }
 
@@ -70,7 +70,7 @@ img {
 
 @media (min-width: 1280px) {
   .header {
-    background-size: 130rem;
+    background-size: 110rem;
   }
 }
 
@@ -95,5 +95,27 @@ img {
 @media (min-width: 768px) {
   .header__logo {
     margin: 0;
+  }
+}
+
+/* Navegación */
+
+.navegacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .navegacion {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .navegacion__link {
+    color: var(--blanco);
   }
 }
