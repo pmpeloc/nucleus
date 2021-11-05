@@ -40,7 +40,8 @@ img {
   max-width: 100%;
   display: block;
 }
-.contenedor {
+
+[class$='__contenedor'] {
   max-width: 120rem;
   margin: 0 auto;
   width: 90%;
@@ -164,4 +165,15 @@ img {
   .navegacion__link {
     color: var(--blanco);
   }
+}
+
+/* Nucleus */
+
+.nucleus {
+  margin-top: 3rem;
+}
+
+.nucleus__heading {
+  text-align: center;
+  margin-bottom: 5rem;
 }
